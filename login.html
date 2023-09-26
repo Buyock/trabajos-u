@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="u-styles.css">
+    <title>Polimarket</title>
+</head>
+<body>
+    <header class="barra">
+        <div class="menu-logo">
+                <button class="burger"><img src="menu.png" alt=""></button>
+                <a href="home.html" class="logo"><img src="logo.png" alt=""></a>
+        </div>
+        <div class="buscador">
+            <input type="text" class="search" placeholder="Buscar...">
+        </div>
+        <div class="usuario-carro">
+            <a href="usuario.html" class="usuario"><img src="usuario.png" alt=""></a>
+            <a href="favoritos.html" class="favoritos"><img src="favs.png" alt=""></a>
+            <a href="carrito.html" class="carrito"><img src="carrito.png" alt=""></a>
+            <a href="home.html" class="logoff"><img src="login.png" alt=""></a></a>
+        </div>
+    </header>
+    <div id="contenedor">
+            
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form id="loginform">
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                    
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </form>
+                
+            </div>
+            <div id="derecho">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <hr>
+                <div class="pie-form">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes Cuenta? Registrate</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="">Sobre Nosotros</a>
+        <a href="">Servicio a Domicilio</a>
+        <a href="">Contáctenos</a>
+        <a href="">Preguntas Frecuentes</a>
+        <h4>© Copyright 2023 Frontend Poligran - Todos los derechos reservados</h4>
+    </footer>
+</body>
+</html>
