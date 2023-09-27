@@ -169,3 +169,113 @@ footer .footer-buttons button {
     color: white;
     padding: 10px 30px;
 }
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+  }
+  .signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form {
+    background-color: rgb(189, 189, 189);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(185, 185, 185, 0.2);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .inputContainer {
+    position: relative;
+    height: 40px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 80%;
+    border: 1px solid #333232;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  
+  ::placeholder {
+    color: transparent;
+  }
+  .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0 3px;
+    background-color: rgb(88, 88, 88);
+    color: #DADCE0;
+    font-size: 14px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .submitBtn {
+    display: block;
+    margin-left: left;
+    padding: 12px 20px;
+    border: none;
+    background-color: #808000;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .buttonBtn {
+    display: block;
+    margin-left: auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #808000;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .submitBtn:hover {
+    background-color: #808000;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(2, 63, 7);
+  }
+  .input:focus {
+    border: 2px solid #808000;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
